@@ -1,0 +1,441 @@
+/**{
+    margin: 1px;;
+    padding:0px;
+    font-family: Century Gothic;
+}
+*{
+  font-family:'Nunito',sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline:none;
+  border:none;
+  text-decoration:none;
+  transition:all .2s linear;
+
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x:hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background: #333;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:#fff;
+  text-transform:uppercase;
+}
+header .logo spam{
+  color:var(--orange);
+}
+
+header .navbar a{
+  color:#fff;
+  font-size:2rem;
+  margin:0.8rem;
+
+}
+header .navbar a:hover{
+  background-color: #fff;
+  color: #000;
+}
+section{
+  padding:2rem 9%; 
+}
+.home{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-flow:column;
+  position:relative;
+  z-index:0;
+}
+.home .content{
+  text-align:center;
+}
+.home .content h2{
+  font-size:4.5rem;
+  color:#fff;
+  text-transform:uppercase;
+  text-shadow:0 .3rem .5rem rgba(0,0,0,.1);
+}
+/*
+#menu-bar{
+  color:#fff;
+  border:.1rem solid #fff;
+  border-radius: .5rem;
+  font-size:3rem;
+  padding: .5rem 1.2rem;
+  cursor:pointer;
+  display:none;
+}
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  
+    background-image: url(Traveller.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+}
+ul.info {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .info li {
+    flex: 1;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    text-align: center;
+  }
+  
+  .info li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+background-color: #fff;
+color: #000;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+.title::before{
+    content:"";
+    background:url('Traveller.jpg');
+    position:absolute;
+    width: 100%;
+    height:650px;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:0.89;
+}
+.logoname{
+    
+    color: white;
+    text-shadow: 5px 5px 5px rgb(41, 39, 39);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+#home h1{
+    text-align:center;
+    color:white;
+    text-shadow: 3px 3px 4px rgb(185,183,183);
+}
+
+
+
+@media(max-width:991px){
+  header{
+    padding:2rem;
+  }
+}
+@media(max-width:768px){
+  #menu-bar{
+    display:initial;
+  }
+  header .navbar{
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding : 1rem 2rem;
+  }
+}
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family:cursive;
+  position:static;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position:absolute;
+  top: 0.5px;
+  
+  left: 0px;
+  width: 100%;
+  height: 86%;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+
+
+
+#logoname {
+  color: white;
+  text-shadow: 5px 5px 5px rgb(41, 39, 39);
+  font-size: 1.2rem;
+  margin-left: 2px;
+  margin-top: 7px;
+}
+
+ul {
+  width: fit-content;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+}
+
+.item {
+  margin: 9px;
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 1000px;
+  margin-left: 100px;
+  margin-top: 10px;
+  
+}
+
+ul a {
+  /* display: block; */
+  padding: 0px 18px;
+  border-radius: 15px;
+  text-decoration: none;
+  color:white;
+  text-shadow: 4px 4px 5px rgb(41, 39, 39);
+}
+
+ul a:hover {
+  background-color: rgb(139, 135, 135);
+}
+
+
+ul a.active {
+  text-decoration: underline;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+#home {
+  display:flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home::before {
+  content: "";
+  background: url('Traveller.jpg') no-repeat center center/cover;
+  position:absolute;
+  width: 100%;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  margin-top:80px;
+  
+}
+
+#home h1 {
+  text-align: center;
+  color:navy;
+  text-shadow: 5px 5px 5px rgb(126, 123, 123);
+  font-size: 2.5rem;
+  font-family:initial;
+}
+
+#home p {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  text-align: center;
+  /*text-shadow: 3px 3px 4px rgb(116, 110, 110);*/
+  color:black;
+}
+#services-container {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-container-head {
+  color:darkred;
+  padding: 12px;
+  font-size: 2.4rem;
+}
+
+.services {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box {
+  border: 2px solid rgb(134, 133, 133);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: rgb(235, 228, 228);
+}
+
+.service-img {
+  height: 150px;
+  width: 250px;
+}
+
+.service-head {
+  padding: 12px;
+  font-size: 1.5rem;
+}
+
+.service-para {
+  font-size: 1.1rem;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: 'Bree Serif', serif;
+}
+
+#contact::before {
+  content: "";
+  background: url('Contact.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 0px;
+  z-index: -2;
+  opacity: 0.85;
+}
+
+.contact-head {
+  padding: 18px;
+  color:darkred;
+  font-size: 2.4rem;
+  text-align: center;
+ 
+}
+#contactbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea {
+  width: 90%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  font-family:'Courier New', Courier, monospace;
+  border: 2px solid rgb(128, 119, 119);
+}
+
+#contactbox form {
+  width: 70%;
+}
+
+#contactbox label {
+  font-size: 1.1rem;
+  color: black;
+ 
+}
+.btn {
+  padding: 5px 24px;
+  border: 2px solid rgb(176, 37, 37);
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(41, 39, 39);
+  color: black;
+  margin: 20px;
+  cursor: pointer;
+  margin-left: middle;
+  
+}
+.btn:hover {
+  text-decoration: underline;
+}
+
+#but1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-size: 1.2rem;
+  font-family: 'Bree Serif', serif;
+  padding: 8px;
+ 
+}
